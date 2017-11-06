@@ -1,0 +1,880 @@
+@charset "UTF-8";
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+/**
+ * [border 设置四边框]
+ * eg: .border {
+ *  @extend %border;
+ * }
+ */
+/**
+ * [border 设置圆角边框]
+ * eg: .border {
+ *  @extend %borderRadius;
+ * }
+ */
+/**
+ * [border 设置左边框]
+ * eg: .border {
+ *  @extend %borderLeft;
+ * }
+ */
+/**
+ * [border 设置右边框]
+ * eg: .border {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置上边框]
+ * eg: .borderTop {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置下边框]
+ *  position: relative;
+ *  @extend %borderBottom;
+ * }
+ */
+html {
+  color: #333;
+  background: #fff;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+html, body {
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  font-family: sans-serif;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: .24rem; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  margin: 0;
+  padding: 0; }
+
+input, select, textarea {
+  font-size: 100%; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+del {
+  text-decoration: line-through; }
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: 500; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: 500; }
+
+q:before, q:after {
+  content: ""; }
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+a:hover {
+  text-decoration: underline; }
+
+ins, a {
+  text-decoration: none; }
+
+a, a:hover {
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent; }
+
+img {
+  vertical-align: top; }
+
+input {
+  -webkit-appearance: none; }
+
+input:focus {
+  outline: none; }
+
+button:focus {
+  outline: none; }
+
+input[type="search"] {
+  -webkit-appearance: none; }
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+  display: none; }
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background-color: #F5F5F5; }
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px transparent;
+  border-radius: 10px;
+  background-color: #F5F5F5; }
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555; }
+
+/*解决android 虚拟键盘遮挡输入框问题*/
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+@media (max-width: 768px) and (orientation: landscape) {
+  body {
+    bottom: auto;
+    height: 200%; } }
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+/**
+ * [border 设置四边框]
+ * eg: .border {
+ *  @extend %border;
+ * }
+ */
+/**
+ * [border 设置圆角边框]
+ * eg: .border {
+ *  @extend %borderRadius;
+ * }
+ */
+/**
+ * [border 设置左边框]
+ * eg: .border {
+ *  @extend %borderLeft;
+ * }
+ */
+/**
+ * [border 设置右边框]
+ * eg: .border {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置上边框]
+ * eg: .borderTop {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置下边框]
+ *  position: relative;
+ *  @extend %borderBottom;
+ * }
+ */
+.clearfix:after {
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+  overflow: hidden; }
+
+.clearfix, .zoom {
+  zoom: 1; }
+
+.clearfix:after, .hidden {
+  visibility: hidden; }
+
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+/**
+ * [border 设置四边框]
+ * eg: .border {
+ *  @extend %border;
+ * }
+ */
+/**
+ * [border 设置圆角边框]
+ * eg: .border {
+ *  @extend %borderRadius;
+ * }
+ */
+/**
+ * [border 设置左边框]
+ * eg: .border {
+ *  @extend %borderLeft;
+ * }
+ */
+/**
+ * [border 设置右边框]
+ * eg: .border {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置上边框]
+ * eg: .borderTop {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置下边框]
+ *  position: relative;
+ *  @extend %borderBottom;
+ * }
+ */
+.g-button {
+  overflow: visible;
+  border: 0;
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  text-align: center; }
+
+.g-button.g-big-radius-button:after, .g-button.g-mid-radius-button:after, .g-button.g-small-radius-button:after {
+  border-radius: .15rem; }
+
+.g-button.g-big-button, .g-button.g-big-radius-button {
+  width: 7.5rem;
+  height: .8rem;
+  line-height: .8rem;
+  font-size: .3rem; }
+
+.g-button.g-mid-button, .g-button.g-mid-radius-button {
+  width: 6.7rem;
+  height: .8rem;
+  line-height: .8rem;
+  font-size: .3rem;
+  justify-content: center; }
+
+.g-button.g-small-button, .g-button.g-small-radius-button {
+  display: inline-flex;
+  padding: .13rem .21rem;
+  font-size: .24rem; }
+
+.g-button.g-three-button:after, .g-button.g-four-button:after, .g-button.g-six-button:after {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  box-sizing: border-box; }
+
+.g-button.g-primary-button {
+  background: #27a366;
+  color: #fff; }
+  .g-button.g-primary-button:active {
+    color: #fff; }
+.g-button.g-disabled-primary-button {
+  background: #c0c0c0;
+  color: #fff; }
+  .g-button.g-disabled-primary-button:active {
+    background: #c0c0c0;
+    color: #fff; }
+.g-button.g-second-button {
+  background: #efa125;
+  color: #fff; }
+.g-button.g-disabled-second-button {
+  background: #ccc;
+  color: #fff; }
+.g-button.g-three-button {
+  background: #fff;
+  color: #333;
+  position: relative; }
+  .g-button.g-three-button:after {
+    border: 1px solid #666; }
+.g-button.g-four-button {
+  background: #fff;
+  color: #27a366;
+  position: relative; }
+  .g-button.g-four-button:after {
+    border: 1px solid #27a366; }
+.g-button.g-five-button {
+  background: -webkit-linear-gradient(to right, #18aba3, #27a366);
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(to right, #18aba3, #27a366);
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(to right, #18aba3, #27a366);
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #18aba3, #27a366);
+  /* 标准的语法 */
+  color: #fff; }
+  .g-button.g-five-button:active {
+    color: #fff; }
+.g-button.g-disabled-five-button {
+  background: #c0c0c0;
+  color: #fff; }
+  .g-button.g-disabled-five-button:active {
+    background: #c0c0c0;
+    color: #fff; }
+.g-button.g-six-button {
+  background: #fff;
+  color: #ccc;
+  position: relative; }
+  .g-button.g-six-button:after {
+    border: 1px solid #ccc; }
+
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+/**
+ * [border 设置四边框]
+ * eg: .border {
+ *  @extend %border;
+ * }
+ */
+/**
+ * [border 设置圆角边框]
+ * eg: .border {
+ *  @extend %borderRadius;
+ * }
+ */
+/**
+ * [border 设置左边框]
+ * eg: .border {
+ *  @extend %borderLeft;
+ * }
+ */
+/**
+ * [border 设置右边框]
+ * eg: .border {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置上边框]
+ * eg: .borderTop {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置下边框]
+ *  position: relative;
+ *  @extend %borderBottom;
+ * }
+ */
+.g-row .g-col-1, .g-row .g-col-2, .g-row .g-col-3, .g-row .g-col-4, .g-row .g-col-5, .g-row .g-col-6, .g-row .g-col-7, .g-row .g-col-8, .g-row .g-col-9, .g-row .g-col-10 {
+  justify-content: space-between;
+  margin: 0 .15rem;
+  overflow: hidden; }
+
+.g-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin: .15rem; }
+  .g-row .g-col-1 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1; }
+  .g-row .g-col-2 {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+    flex: 2; }
+  .g-row .g-col-3 {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    flex: 3; }
+  .g-row .g-col-4 {
+    -webkit-box-flex: 4;
+    -webkit-flex: 4;
+    flex: 4; }
+  .g-row .g-col-5 {
+    -webkit-box-flex: 5;
+    -webkit-flex: 5;
+    flex: 5; }
+  .g-row .g-col-6 {
+    -webkit-box-flex: 6;
+    -webkit-flex: 6;
+    flex: 6; }
+  .g-row .g-col-7 {
+    -webkit-box-flex: 7;
+    -webkit-flex: 7;
+    flex: 7; }
+  .g-row .g-col-8 {
+    -webkit-box-flex: 8;
+    -webkit-flex: 8;
+    flex: 8; }
+  .g-row .g-col-9 {
+    -webkit-box-flex: 9;
+    -webkit-flex: 9;
+    flex: 9; }
+  .g-row .g-col-10 {
+    -webkit-box-flex: 10;
+    -webkit-flex: 10;
+    flex: 10; }
+
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+/**
+ * [border 设置四边框]
+ * eg: .border {
+ *  @extend %border;
+ * }
+ */
+/**
+ * [border 设置圆角边框]
+ * eg: .border {
+ *  @extend %borderRadius;
+ * }
+ */
+/**
+ * [border 设置左边框]
+ * eg: .border {
+ *  @extend %borderLeft;
+ * }
+ */
+/**
+ * [border 设置右边框]
+ * eg: .border {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置上边框]
+ * eg: .borderTop {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置下边框]
+ *  position: relative;
+ *  @extend %borderBottom;
+ * }
+ */
+/**
+ * [baseFormBtnStyle 设置开关按钮、单选按钮、多选按钮公共基础样式]
+ * @param  {[type]} $w  [description]
+ * @param  {[type]} $h  [description]
+ * @param  {[type]} $border  [description]
+ * @param  {[type]} $bgColor  [description]
+ * @param  {[type]} $borderRadius  [description]
+ * @return {[type]}           [description]
+ */
+.g-text {
+  border: 0;
+  padding: 0 0 0 .2rem;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: .28rem; }
+
+.g-cell-switch {
+  padding: .14rem .3rem; }
+  .g-cell-switch .g-cell-bd {
+    padding-top: .14rem;
+    padding-bottom: .14rem; }
+
+.g-switch {
+  appearance: none;
+  position: relative;
+  width: 1.02rem;
+  height: 0.6rem;
+  border: 2px solid #e5e5e5;
+  outline: 0;
+  border-radius: 0.6rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: background-color .1s, border .1s; }
+  .g-switch:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 15px;
+    background-color: #fff;
+    transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1); }
+  .g-switch:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: .5rem;
+    height: .5rem;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+    border-right: 1px solid #e5e5e5;
+    border-radius: 15px;
+    background-color: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35); }
+  .g-switch:checked {
+    border-color: #27a366;
+    background-color: #27a366; }
+    .g-switch:checked:before {
+      transform: scale(0); }
+    .g-switch:checked:after {
+      transform: translateX(0.45rem); }
+
+.g-radio {
+  appearance: none;
+  position: relative;
+  width: 0.36rem;
+  height: 0.36rem;
+  border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 0.3rem;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: background-color .1s, border .1s; }
+  .g-radio:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1); }
+  .g-radio:checked {
+    border-color: #27a366;
+    background-color: #27a366; }
+    .g-radio:checked:before {
+      transform: scale(0); }
+    .g-radio:checked:after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 70%;
+      height: 35%;
+      margin-top: -30%;
+      margin-left: -40%;
+      border-left: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      box-sizing: border-box;
+      transform: rotate(-45deg); }
+
+.g-checkbox {
+  appearance: none;
+  position: relative;
+  width: 0.24rem;
+  height: 0.24rem;
+  border: 1px solid #666;
+  outline: 0;
+  border-radius: 2px;
+  box-sizing: border-box;
+  background-color: #fff;
+  transition: background-color .1s, border .1s; }
+  .g-checkbox:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1); }
+  .g-checkbox:checked {
+    border-color: #27a366;
+    color: #27a366; }
+    .g-checkbox:checked:before {
+      transform: scale(0); }
+    .g-checkbox:checked:after {
+      content: " ";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 80%;
+      height: 40%;
+      margin-top: -30%;
+      margin-left: -40%;
+      border-left: 1px solid #27a366;
+      border-bottom: 1px solid #27a366;
+      box-sizing: border-box;
+      transform: rotate(-45deg); }
+  .g-checkbox-two {
+    appearance: none;
+    position: relative;
+    width: 0.35rem;
+    height: 0.35rem;
+    border: 1px solid #666;
+    outline: 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    background-color: #fff;
+    transition: background-color .1s, border .1s; }
+    .g-checkbox-two:checked {
+      border-color: #27a366;
+      color: #fff;
+      background-color: #27a366; }
+      .g-checkbox-two:checked:after {
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff; }
+
+.g-textArea {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  resize: none;
+  font-size: .28rem; }
+
+.g-textArea-counter {
+  text-align: right;
+  color: #999; }
+
+.g-cell-bd-textArea {
+  position: relative; }
+
+.g-textArea-del {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 99;
+  background-color: #fff; }
+
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+/**
+ * [border 设置四边框]
+ * eg: .border {
+ *  @extend %border;
+ * }
+ */
+/**
+ * [border 设置圆角边框]
+ * eg: .border {
+ *  @extend %borderRadius;
+ * }
+ */
+/**
+ * [border 设置左边框]
+ * eg: .border {
+ *  @extend %borderLeft;
+ * }
+ */
+/**
+ * [border 设置右边框]
+ * eg: .border {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置上边框]
+ * eg: .borderTop {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置下边框]
+ *  position: relative;
+ *  @extend %borderBottom;
+ * }
+ */
+.g-cells {
+  position: relative;
+  background-color: #fff; }
+
+.g-cell {
+  padding: .3rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  font-size: .28rem;
+  position: relative; }
+  .g-cell:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5); }
+  .g-cell:last-child {
+    border: 0; }
+    .g-cell:last-child:after {
+      border-bottom: 0; }
+  .g-cell .g-cell-bd {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    color: #333;
+    text-align: left; }
+  .g-cell .g-cell-ft {
+    color: #666;
+    text-align: right; }
+  .g-cell-access .g-cell-ft i.icon-gengduo4 {
+    width: .18rem;
+    height: .32rem; }
+
+/*# sourceMappingURL=mobile-ui-lib.css.map */

@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@import '../themes/themes.scss';
+@import '../helps/mixin.scss';
+
+$searchWidth: 5.5rem;
+$searchHeight: .64rem; // 设置搜索框高度
+.m-search {
+  @include displayFlex();
+  width: $searchWidth;
+  background-color: $bgSecColor;
+  height: $searchHeight;
+  // padding: .15rem 0;
+  border-radius: .1rem;
+  overflow: hidden;
+  i {
+    font-size: .3rem;
+    line-height: $searchHeight;
+    padding-left: .2rem;
+  }
+  input {
+    padding: 0 .1rem;
+    font-size: .24rem;
+    border: 0;
+    @include flex();
+  }
+  // 带边框的
+  &-border {
+    box-sizing: border-box;
+    border:1px solid $linePrimaryColor;
+    i {
+      padding-left: .1rem;
+    }
+  }
+  // 定义搜索类型样式
+  &-type {
+    @include displayFlex;
+    padding: 0 .1rem;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    border-right: 1px solid $linePrimaryColor;
+    label {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      line-height: $searchHeight;
+    }
+    i {
+      padding-left: 0;
+    }
+  }
+  // 定义搜索外部样式
+  &-outer {
+    @include displayFlex;
+    position: relative;
+
+  }
+  // 定义取消按钮样式
+  &-close {
+    position: absolute;
+    top: .2rem;
+    right: .3rem;
+    color: $fontPrimaryColor;
+  }
+  // 定义搜索按钮样式
+  &-btn {
+    width: 1.2rem;
+    height: $searchHeight;
+    line-height:$searchHeight;
+    background-color: $bgFourColor;
+    color: $fontFourColor;
+    border: 0;
+    font-size: .26rem;
+  }
+}

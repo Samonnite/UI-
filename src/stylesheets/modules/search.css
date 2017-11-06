@@ -1,0 +1,123 @@
+@charset "UTF-8";
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+/**
+ * [border 设置四边框]
+ * eg: .border {
+ *  @extend %border;
+ * }
+ */
+/**
+ * [border 设置圆角边框]
+ * eg: .border {
+ *  @extend %borderRadius;
+ * }
+ */
+/**
+ * [border 设置左边框]
+ * eg: .border {
+ *  @extend %borderLeft;
+ * }
+ */
+/**
+ * [border 设置右边框]
+ * eg: .border {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置上边框]
+ * eg: .borderTop {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置下边框]
+ *  position: relative;
+ *  @extend %borderBottom;
+ * }
+ */
+.m-search {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 5.5rem;
+  background-color: #fff;
+  height: 0.64rem;
+  border-radius: .1rem;
+  overflow: hidden; }
+  .m-search i {
+    font-size: .3rem;
+    line-height: 0.64rem;
+    padding-left: .2rem; }
+  .m-search input {
+    padding: 0 .1rem;
+    font-size: .24rem;
+    border: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1; }
+  .m-search-border {
+    box-sizing: border-box;
+    border: 1px solid #ccc; }
+    .m-search-border i {
+      padding-left: .1rem; }
+  .m-search-type {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    padding: 0 .1rem;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    border-right: 1px solid #ccc; }
+    .m-search-type label {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      line-height: 0.64rem; }
+    .m-search-type i {
+      padding-left: 0; }
+  .m-search-outer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    position: relative; }
+  .m-search-close {
+    position: absolute;
+    top: .2rem;
+    right: .3rem;
+    color: #333; }
+  .m-search-btn {
+    width: 1.2rem;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    background-color: #27a366;
+    color: #fff;
+    border: 0;
+    font-size: .26rem; }
+
+/*# sourceMappingURL=search.css.map */

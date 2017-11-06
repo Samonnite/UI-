@@ -1,0 +1,94 @@
+@charset "UTF-8";
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+.border:after {
+  content: '';
+  position: absolute;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  pointer-events: none;
+  /* 防止点击触发 */ }
+
+/**
+ * [border 设置四边框]
+ * eg: .border {
+ *  @extend %border;
+ * }
+ */
+.border {
+  position: relative; }
+  .border:after {
+    border: 1px solid #ccc; }
+
+/**
+ * [border 设置圆角边框]
+ * eg: .border {
+ *  @extend %borderRadius;
+ * }
+ */
+/**
+ * [border 设置左边框]
+ * eg: .border {
+ *  @extend %borderLeft;
+ * }
+ */
+/**
+ * [border 设置右边框]
+ * eg: .border {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置上边框]
+ * eg: .borderTop {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置下边框]
+ *  position: relative;
+ *  @extend %borderBottom;
+ * }
+ */
+.border {
+  display: block;
+  z-index: 999;
+  margin: 20px;
+  width: 100px;
+  height: 100px; }
+
+h2 {
+  font-size: 20px; }
+
+/*# sourceMappingURL=list.css.map */

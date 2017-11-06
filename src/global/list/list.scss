@@ -1,0 +1,14 @@
+@charset "UTF-8";
+@import '../../stylesheets/themes/themes';
+@import '../../stylesheets/helps/mixin';
+.border {
+  display: block;
+  z-index: 999;
+  @extend %border;
+  margin: 20px;
+  width: 100px;
+  height: 100px;
+}
+h2 {
+  font-size: 20px;
+}

@@ -1,0 +1,159 @@
+@charset "UTF-8";
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+/**
+ * [border 设置四边框]
+ * eg: .border {
+ *  @extend %border;
+ * }
+ */
+/**
+ * [border 设置圆角边框]
+ * eg: .border {
+ *  @extend %borderRadius;
+ * }
+ */
+/**
+ * [border 设置左边框]
+ * eg: .border {
+ *  @extend %borderLeft;
+ * }
+ */
+/**
+ * [border 设置右边框]
+ * eg: .border {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置上边框]
+ * eg: .borderTop {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置下边框]
+ *  position: relative;
+ *  @extend %borderBottom;
+ * }
+ */
+.g-button {
+  overflow: visible;
+  border: 0;
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  text-align: center; }
+
+.g-button.g-big-radius-button:after, .g-button.g-mid-radius-button:after, .g-button.g-small-radius-button:after {
+  border-radius: .15rem; }
+
+.g-button.g-big-button, .g-button.g-big-radius-button {
+  width: 7.5rem;
+  height: .8rem;
+  line-height: .8rem;
+  font-size: .3rem; }
+
+.g-button.g-mid-button, .g-button.g-mid-radius-button {
+  width: 6.7rem;
+  height: .8rem;
+  line-height: .8rem;
+  font-size: .3rem;
+  justify-content: center; }
+
+.g-button.g-small-button, .g-button.g-small-radius-button {
+  display: inline-flex;
+  padding: .13rem .21rem;
+  font-size: .24rem; }
+
+.g-button.g-three-button:after, .g-button.g-four-button:after, .g-button.g-six-button:after {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  box-sizing: border-box; }
+
+.g-button.g-primary-button {
+  background: #27a366;
+  color: #fff; }
+  .g-button.g-primary-button:active {
+    color: #fff; }
+.g-button.g-disabled-primary-button {
+  background: #c0c0c0;
+  color: #fff; }
+  .g-button.g-disabled-primary-button:active {
+    background: #c0c0c0;
+    color: #fff; }
+.g-button.g-second-button {
+  background: #efa125;
+  color: #fff; }
+.g-button.g-disabled-second-button {
+  background: #ccc;
+  color: #fff; }
+.g-button.g-three-button {
+  background: #fff;
+  color: #333;
+  position: relative; }
+  .g-button.g-three-button:after {
+    border: 1px solid #666; }
+.g-button.g-four-button {
+  background: #fff;
+  color: #27a366;
+  position: relative; }
+  .g-button.g-four-button:after {
+    border: 1px solid #27a366; }
+.g-button.g-five-button {
+  background: -webkit-linear-gradient(to right, #18aba3, #27a366);
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(to right, #18aba3, #27a366);
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(to right, #18aba3, #27a366);
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #18aba3, #27a366);
+  /* 标准的语法 */
+  color: #fff; }
+  .g-button.g-five-button:active {
+    color: #fff; }
+.g-button.g-disabled-five-button {
+  background: #c0c0c0;
+  color: #fff; }
+  .g-button.g-disabled-five-button:active {
+    background: #c0c0c0;
+    color: #fff; }
+.g-button.g-six-button {
+  background: #fff;
+  color: #ccc;
+  position: relative; }
+  .g-button.g-six-button:after {
+    border: 1px solid #ccc; }
+
+/*# sourceMappingURL=button.css.map */

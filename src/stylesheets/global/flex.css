@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+/**
+ * [border 设置四边框]
+ * eg: .border {
+ *  @extend %border;
+ * }
+ */
+/**
+ * [border 设置圆角边框]
+ * eg: .border {
+ *  @extend %borderRadius;
+ * }
+ */
+/**
+ * [border 设置左边框]
+ * eg: .border {
+ *  @extend %borderLeft;
+ * }
+ */
+/**
+ * [border 设置右边框]
+ * eg: .border {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置上边框]
+ * eg: .borderTop {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置下边框]
+ *  position: relative;
+ *  @extend %borderBottom;
+ * }
+ */
+.g-row .g-col-1, .g-row .g-col-2, .g-row .g-col-3, .g-row .g-col-4, .g-row .g-col-5, .g-row .g-col-6, .g-row .g-col-7, .g-row .g-col-8, .g-row .g-col-9, .g-row .g-col-10 {
+  justify-content: space-between;
+  margin: 0 .15rem;
+  overflow: hidden; }
+
+.g-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin: .15rem; }
+  .g-row .g-col-1 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    flex: 1; }
+  .g-row .g-col-2 {
+    -webkit-box-flex: 2;
+    -webkit-flex: 2;
+    flex: 2; }
+  .g-row .g-col-3 {
+    -webkit-box-flex: 3;
+    -webkit-flex: 3;
+    flex: 3; }
+  .g-row .g-col-4 {
+    -webkit-box-flex: 4;
+    -webkit-flex: 4;
+    flex: 4; }
+  .g-row .g-col-5 {
+    -webkit-box-flex: 5;
+    -webkit-flex: 5;
+    flex: 5; }
+  .g-row .g-col-6 {
+    -webkit-box-flex: 6;
+    -webkit-flex: 6;
+    flex: 6; }
+  .g-row .g-col-7 {
+    -webkit-box-flex: 7;
+    -webkit-flex: 7;
+    flex: 7; }
+  .g-row .g-col-8 {
+    -webkit-box-flex: 8;
+    -webkit-flex: 8;
+    flex: 8; }
+  .g-row .g-col-9 {
+    -webkit-box-flex: 9;
+    -webkit-flex: 9;
+    flex: 9; }
+  .g-row .g-col-10 {
+    -webkit-box-flex: 10;
+    -webkit-flex: 10;
+    flex: 10; }
+
+/*# sourceMappingURL=flex.css.map */

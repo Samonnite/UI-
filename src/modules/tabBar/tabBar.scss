@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@import '../../stylesheets/themes/themes.scss';
+@import '../../stylesheets/helps/mixin.scss';
+body {
+  background-color: $bgPrimaryColor;
+}
+.m-tabBar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}

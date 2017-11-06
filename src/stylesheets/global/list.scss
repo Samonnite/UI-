@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import '../themes/themes';
+@import '../helps/mixin';
+// list
+.g-cells {
+  position: relative;
+  background-color: $bgSecColor;
+}
+.g-cell {
+  padding: .3rem;
+  @include displayFlex;
+  font-size: .28rem;
+  position: relative;
+  &:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    border-bottom: 1px solid $linePrimaryColor;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(.5);
+    transform: scaleY(.5);
+  }
+  &:last-child {
+    border:0;
+    &:after {
+      border-bottom: 0;
+    }
+  }
+  .g-cell-bd {
+    @include flex;
+    color: $fontPrimaryColor;
+    text-align: left;
+  }
+  .g-cell-ft {
+    color: $fontSecColor;
+    text-align: right;
+  }
+  &-access {
+    .g-cell-ft {
+      i.icon-gengduo4 {
+        width: .18rem;
+        height: .32rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,149 @@
+@charset "UTF-8";
+@import '../themes/themes';
+@import '../helps/mixin';
+// 按钮
+%btnBaseStyle {
+  overflow: visible;
+  border: 0;
+  box-sizing: border-box;
+  text-align: center;
+  outline: none;
+  text-align: center;
+}
+%btnRadiusStyle {
+  border-radius: .15rem;
+}
+%btnBigStyle {
+  width: 7.5rem;
+  height: .8rem;
+  line-height: .8rem;
+  font-size: .3rem;
+}
+%btnMidStyle {
+  width: 6.7rem;
+  height: .8rem;
+  line-height: .8rem;
+  font-size: .3rem;
+  justify-content: center;
+}
+%btnSmallStyle {
+  display: inline-flex;
+  padding: .13rem .21rem;
+  font-size: .24rem;
+}
+%btnBorderAfter {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(.5);
+  transform: scale(.5);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  box-sizing: border-box;
+}
+.g-button {
+  @extend %btnBaseStyle;
+  &.g-big-button {
+    @extend %btnBigStyle;
+  }
+  &.g-mid-button {
+    @extend %btnMidStyle;
+  }
+  &.g-small-button {
+    @extend %btnSmallStyle;
+  }
+  &.g-big-radius-button {
+    @extend %btnBigStyle;
+    &:after {
+      @extend %btnRadiusStyle;
+    }
+  }
+  &.g-mid-radius-button {
+    @extend %btnMidStyle;
+    &:after {
+      @extend %btnRadiusStyle;
+    }
+  }
+  &.g-small-radius-button {
+    @extend %btnSmallStyle;
+    &:after {
+      @extend %btnRadiusStyle;
+    }
+  }
+  &.g-primary-button {
+    background: $btnDefaultBgPrimaryColor;
+    color: $btnDefaultFtPrimaryColor;
+    &:active {
+      // background-color: $btnPressBgPrimaryColor;
+      color: $btnPressFtPrimaryColor;
+    }
+  }
+  &.g-disabled-primary-button {
+    background: $btnDisabledBgPrimaryColor;
+    color: $btnDisabledFtPrimaryColor;
+    &:active {
+      background: $btnDisabledBgPrimaryColor;
+      color: $btnDisabledFtPrimaryColor;
+    }
+  }
+  &.g-second-button {
+    background: $btnDefaultBgSecColor;
+    color: $btnDefaultFtSecColor;
+  }
+  &.g-disabled-second-button {
+    background: $btnDisabledBgSecColor;
+    color: $btnDisabledFtSecColor;
+  }
+
+  &.g-three-button {
+    background: $btnDefaultBdBgPrimaryColor;
+    color: $btnDefaultBdFtPrimaryColor;
+    // border:1px solid $btnDefaultBdBdPrimaryColor;
+    position: relative;
+    &:after {
+      @extend %btnBorderAfter;
+      border: 1px solid $btnDefaultBdBdPrimaryColor;
+    }
+  }
+  &.g-four-button {
+    background: $btnPressBdBgPrimaryColor;
+    color: $btnPressBdFtPrimaryColor;
+    // border:1px solid $btnPressBdBdPrimaryColor;
+    position: relative;
+    &:after {
+      @extend %btnBorderAfter;
+      border: 1px solid $btnPressBdFtPrimaryColor;
+    }
+  }
+  &.g-five-button {
+    background: -webkit-linear-gradient(to right, #18aba3, #27a366); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(to right, #18aba3, #27a366); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(to right, #18aba3, #27a366); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #18aba3, #27a366); /* 标准的语法 */
+    color: $btnDefaultFtPrimaryColor;
+    &:active {
+      color: $btnPressFtPrimaryColor;
+    }
+  }
+  &.g-disabled-five-button {
+    background: $btnDisabledBgPrimaryColor;
+    color: $btnDisabledFtPrimaryColor;
+    &:active {
+      background: $btnDisabledBgPrimaryColor;
+      color: $btnDisabledFtPrimaryColor;
+    }
+  }
+  &.g-six-button {
+    background: $btnPressBdBgPrimaryColor;
+    color: $btnDisabledBgSecColor;
+    // border:1px solid $btnDisabledBgSecColor;
+    position: relative;
+    &:after {
+      @extend %btnBorderAfter;
+      border: 1px solid $btnDisabledBgSecColor;
+    }
+  }
+}

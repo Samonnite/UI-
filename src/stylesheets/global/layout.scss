@@ -1,0 +1,19 @@
+@charset "UTF-8";
+@import '../themes/themes';
+@import '../helps/mixin';
+// 清除浮动
+.clearfix:after {
+    display: block;
+    font-size: 0;
+    content: "";
+    clear: both;
+    height: 0;
+    overflow: hidden
+}
+.clearfix, .zoom {
+    zoom: 1
+}
+
+.clearfix:after, .hidden {
+    visibility: hidden
+}

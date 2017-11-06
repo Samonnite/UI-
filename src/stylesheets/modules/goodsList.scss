@@ -1,0 +1,86 @@
+@charset "UTF-8";
+@import '../themes/themes.scss';
+@import '../helps/mixin.scss';
+.m-goodsList {
+  // 样式一
+  &-horizontal {
+    @include displayFlex;
+    margin: .15rem;
+    -webkit-flex-wrap:wrap;
+    flex-wrap:wrap;
+  }
+  &-horizontal &-col {
+    @include flex(initial);
+    margin: .15rem;
+
+  }
+  &-item {
+    display: block;
+    width: 3.30rem;
+    background-color: $bgSecColor;
+    p {
+      padding: 0 .2rem;
+      line-height: .44rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      &:first-of-type {
+        padding-top: .1rem;
+      }
+      &:last-child {
+        padding-bottom: .1rem;
+      }
+    }
+  }
+  &-horizontal &-img {
+    width: 3.30rem;
+    height: 3.30rem;
+  }
+  &-img {
+    width: 100%;
+    height: 100%;
+  }
+  &-title {
+    font-size: .26rem;
+    color: $fontPrimaryColor;
+  }
+  &-price {
+    font-size: .30rem;
+    color: $fontFiveColor;
+  }
+  // 样式二
+  &-vertical {
+
+  }
+  &-vertical &-item {
+    @include displayFlex;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  &-vertical &-hd {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  &-vertical &-bd {
+    @include flex();
+  }
+  // 样式三
+  &-horizontal-two {
+    @include displayFlex;
+    -webkit-flex-wrap:wrap;
+    flex-wrap:wrap;
+    margin: .05rem 0;
+  }
+  &-horizontal-two &-col {
+    margin-top: .05rem;
+    margin-bottom: .05rem;
+    margin-right: .05rem;
+    &:nth-child(2n) {
+      margin-left: .05rem;;
+      margin-right: 0;
+    }
+  }
+  &-horizontal-two &-item {
+    width: 3.7rem;
+  }
+}

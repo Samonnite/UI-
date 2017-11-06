@@ -1,0 +1,74 @@
+@charset "UTF-8";
+@import '../themes/themes.scss';
+@import '../helps/mixin.scss';
+.m-header {
+  @include displayFlex;
+  padding: .1rem .30rem;
+  background-color: $bgFourColor;
+  color: $fontFourColor;
+  font-size: .36rem;
+  text-align: center;
+  a {
+    @include displayFlex;
+    color: $fontFourColor;
+    i {
+      font-size: .6rem;
+    }
+    label {
+      font-size: .32rem;
+      line-height: .7rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  &-left, &-right {
+    @include flex(1);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  &-left {
+    a {
+      justify-content: flex-start;
+    }
+    i {
+      margin-left: -.12rem;
+    }
+    label {
+      padding-right: .1rem;
+    }
+  }
+  &-right {
+    a {
+      justify-content: flex-end;
+    }
+    label {
+      padding-left: .1rem;
+    }
+  }
+  &-title {
+    // @include flex(1);
+    width: 4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: .36rem;
+    line-height: .7rem;
+    &-left {
+      text-align: left;
+    }
+    &-right {
+      text-align: right;
+    }
+  }
+  &.m-headerLeft {
+    .m-header-title {
+      @include flex(1);
+      text-align: left;
+    }
+    .m-header-left,.m-header-right {
+      @include flex(inherit);
+    }
+  }
+}

@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/*背景色*/
+/*线条颜色*/
+/*字体颜色*/
+/*按钮颜色*/
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+/**
+ * [border 设置四边框]
+ * eg: .border {
+ *  @extend %border;
+ * }
+ */
+/**
+ * [border 设置圆角边框]
+ * eg: .border {
+ *  @extend %borderRadius;
+ * }
+ */
+/**
+ * [border 设置左边框]
+ * eg: .border {
+ *  @extend %borderLeft;
+ * }
+ */
+/**
+ * [border 设置右边框]
+ * eg: .border {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置上边框]
+ * eg: .borderTop {
+ *  @extend %borderRight;
+ * }
+ */
+/**
+ * [border 设置下边框]
+ *  position: relative;
+ *  @extend %borderBottom;
+ * }
+ */
+.m-goodsList-horizontal {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  margin: .15rem;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap; }
+.m-goodsList-horizontal .m-goodsList-col {
+  -webkit-box-flex: initial;
+  -webkit-flex: initial;
+  flex: initial;
+  margin: .15rem; }
+.m-goodsList-item {
+  display: block;
+  width: 3.30rem;
+  background-color: #fff; }
+  .m-goodsList-item p {
+    padding: 0 .2rem;
+    line-height: .44rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+    .m-goodsList-item p:first-of-type {
+      padding-top: .1rem; }
+    .m-goodsList-item p:last-child {
+      padding-bottom: .1rem; }
+.m-goodsList-horizontal .m-goodsList-img {
+  width: 3.30rem;
+  height: 3.30rem; }
+.m-goodsList-img {
+  width: 100%;
+  height: 100%; }
+.m-goodsList-title {
+  font-size: .26rem;
+  color: #333; }
+.m-goodsList-price {
+  font-size: .30rem;
+  color: #27a366; }
+.m-goodsList-vertical .m-goodsList-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box; }
+.m-goodsList-vertical .m-goodsList-hd {
+  width: 1.8rem;
+  height: 1.8rem; }
+.m-goodsList-vertical .m-goodsList-bd {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1; }
+.m-goodsList-horizontal-two {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: .05rem 0; }
+.m-goodsList-horizontal-two .m-goodsList-col {
+  margin-top: .05rem;
+  margin-bottom: .05rem;
+  margin-right: .05rem; }
+  .m-goodsList-horizontal-two .m-goodsList-col:nth-child(2n) {
+    margin-left: .05rem;
+    margin-right: 0; }
+.m-goodsList-horizontal-two .m-goodsList-item {
+  width: 3.7rem; }
+
+/*# sourceMappingURL=goodsList.css.map */

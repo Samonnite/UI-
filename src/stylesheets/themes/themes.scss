@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/*背景色*/
+$bgPrimaryColor:#f0f0f0;
+$bgSecColor:#fff;
+$bgThreeColor:#f5f9fa;
+$bgFourColor:#27a366;
+/*线条颜色*/
+$linePrimaryColor:#ccc;
+$lineSecColor:#27a366;
+$lineThreeColor:#e5e5e5;
+$lineFourColor:#666;
+/*字体颜色*/
+$fontPrimaryColor:#333;
+$fontSecColor:#666;
+$fontThreeColor:#999;
+$fontFourColor:#fff;
+$fontFiveColor:#27a366;
+$fontSixColor:#efa125;
+/*按钮颜色*/
+
+// 主按钮颜色
+$btnDefaultBgPrimaryColor:#27a366; // 主按钮默认-背景颜色
+$btnDefaultFtPrimaryColor:#fff; // 主按钮默认-字体颜色
+
+$btnPressBgPrimaryColor:#efa125; // 主按钮按下时或移上-背景颜色
+$btnPressFtPrimaryColor:#fff; // 主按钮按下时或移上-字体颜色
+
+$btnDisabledBgPrimaryColor:#c0c0c0; // 主按钮禁用时-背景颜色
+$btnDisabledFtPrimaryColor:#fff; // 主按钮禁用时-字体颜色
+
+
+// 副按钮颜色
+$btnDefaultBgSecColor:#efa125;  // 主按钮默认-背景颜色
+$btnDefaultFtSecColor:#fff; // 主按钮默认-字体颜色
+
+$btnDisabledBgSecColor:#ccc; // 主按钮禁用时-背景颜色
+$btnDisabledFtSecColor:#fff; // 主按钮禁用时-字体颜色
+
+// 带边框的按钮
+$btnDefaultBdBgPrimaryColor:#fff;  // 带边框的按钮默认-背景颜色
+$btnDefaultBdFtPrimaryColor:#333; // 带边框的按钮默认-字体颜色
+$btnDefaultBdBdPrimaryColor:#666; // 带边框的按钮默认-边框颜色
+
+$btnPressBdBgPrimaryColor:#fff;  // 带边框的按钮按下、移上或高亮-背景颜色
+$btnPressBdFtPrimaryColor:#27a366; // 带边框的按钮按下、移上或高亮-字体颜色
+$btnPressBdBdPrimaryColor:#27a366; // 带边框的按钮按下、移上或高亮-边框颜色

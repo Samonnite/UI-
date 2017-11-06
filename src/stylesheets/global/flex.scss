@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@import '../themes/themes';
+@import '../helps/mixin';
+// flex
+%gCol {
+  justify-content:space-between;
+  margin:0 .15rem;
+  overflow: hidden;
+}
+.g-row {
+  // display: -webkit-flex; /* Safari */
+  // display: flex;
+  @include displayFlex;
+  margin: .15rem;
+  .g-col-1 {
+    @include flex;
+    @extend %gCol;
+  }
+  @for $i from 2 through 10 {
+    .g-col-#{$i} {
+      @extend %gCol;
+      @include flex(#{$i});
+      // flex: #{$i};
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@charset "UTF-8";
+@import '../themes/themes';
+/**
+ * [borderRadius description]
+ * @param  {[type]} $topLeft  [description]
+ * @param  {[type]} $topRight [description]
+ * @param  {[type]} $btmLeft  [description]
+ * @param  {[type]} $btmRight [description]
+ * @return {[type]}           [description]
+ */
+@mixin borderRadius($topLeft:0.133333rem, $topRight:0.133333rem, $btmLeft:0.133333rem, $btmRight:0.133333rem) {
+  border-top-left-radius: $topLeft;
+  border-top-right-radius: $topRight;
+  border-bottom-left-radius: $btmLeft;
+  border-bottom-right-radius: $btmRight;
+}
+/** 
+ * [displayFlex 设置盒子的display属性为flex]
+ * @return {[type]}           [description]
+ */
+@mixin displayFlex () {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+/**
+ * [flex 设置盒子flex属性]
+ * @param  {[number]} $num  [默认值为1]
+ * @return {[type]}           [description]
+ */
+@mixin flex ($num:1) {
+  -webkit-box-flex:$num;
+  -webkit-flex:$num;
+          flex:$num;
+}
+%borderBase {
+  content: '';
+  position: absolute;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  pointer-events: none; /* 防止点击触发 */
+}
+/**
+ * [border 设置四边框]
+ * eg: .border {
+ *  @extend %border;
+ * }
+ */
+%border {
+  position: relative;
+  &:after {
+    border:1px solid $linePrimaryColor;
+    @extend %borderBase;
+  }
+}
+/**
+ * [border 设置圆角边框]
+ * eg: .border {
+ *  @extend %borderRadius;
+ * }
+ */
+%borderRadius {
+  position: relative;
+  &:after {
+    border:1px solid $linePrimaryColor;
+    border-radius: .2rem;
+    @extend %borderBase;
+  }
+}
+/**
+ * [border 设置左边框]
+ * eg: .border {
+ *  @extend %borderLeft;
+ * }
+ */
+%borderLeft {
+  position: relative;
+  &:after {
+    @extend %borderBase;
+    border-left:1px solid $linePrimaryColor;
+  }
+}
+/**
+ * [border 设置右边框]
+ * eg: .border {
+ *  @extend %borderRight;
+ * }
+ */
+%borderRight {
+  position: relative;
+  &:after {
+    @extend %borderBase;
+    border-right:1px solid $linePrimaryColor;
+  }
+}
+/**
+ * [border 设置上边框]
+ * eg: .borderTop {
+ *  @extend %borderRight;
+ * }
+ */
+%borderTop {
+  position: relative;
+  &:after {
+    @extend %borderBase;
+    border-top:1px solid $linePrimaryColor;
+  }
+}
+/**
+ * [border 设置下边框]
+ *  position: relative;
+ *  @extend %borderBottom;
+ * }
+ */
+%borderBottom {
+  position: relative;
+  &:after {
+    @extend %borderBase;
+    border-bottom:1px solid $linePrimaryColor;
+  }
+}
